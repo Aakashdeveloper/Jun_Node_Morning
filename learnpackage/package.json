@@ -1,0 +1,19 @@
+{
+  "name": "basicapp",
+  "version": "1.0.0",
+  "description": "this is about nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJs",
+    "package"
+  ],
+  "author": "Nareshit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "zone.js": "^0.9.1"
+  }
+}

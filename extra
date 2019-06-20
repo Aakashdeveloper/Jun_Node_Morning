@@ -1,0 +1,42 @@
+Node Js open source
+>
+https://www.npmjs.com/
+Node Module
+/*********************************
+        Type of node_module
+*********************************/
+Local    => local to the folder
+Global   => global to the system
+
+/*********************************
+     JSON
+*********************************/
+JavaScript object notation
+[
+    {
+        name:"a",
+        class:"b"
+    },
+    {
+        name:"c",
+        class:"d"
+    }
+]
+
+
+/*********************************
+     Step to create package.json
+*********************************/
+> navigate to folder using  cmd
+> npm init
+> Answer All questions
+> Type Yes
+
+
+/*********************************
+     Step to install node_modules/local dependency
+     First Time
+*********************************/
+> First we have package.json file
+> navigate to folder using  cmd
+> npm install <package name>/ npm install zone.js
