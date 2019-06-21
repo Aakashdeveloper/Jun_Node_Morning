@@ -40,3 +40,27 @@ JavaScript object notation
 > First we have package.json file
 > navigate to folder using  cmd
 > npm install <package name>/ npm install zone.js
+
+/*********************************
+    Install Package Globaly
+*********************************/
+win>
+> run a cmd as admin
+> npm i -g @aakashdeveloper/create-node-app
+
+mac/linux
+sudo npm i -g @aakashdeveloper/create-node-app
+
+/*************
+CallBack function
+**************/
+function add (
+    function(){
+        return a+b
+    }
+)
+
+nodemon
+
+
+npm install -g nodemon
