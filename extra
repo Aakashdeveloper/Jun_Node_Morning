@@ -64,3 +64,23 @@ nodemon
 
 
 npm install -g nodemon
+
+/*************
+API
+**************/
+
+Application programme interface
+
+/********************
+    Function in Es6
+*********************/
+
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+---------------------
+const add = (a,b) => { return a+b }
+
+var | let | const 

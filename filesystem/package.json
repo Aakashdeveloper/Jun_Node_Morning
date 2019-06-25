@@ -1,0 +1,16 @@
+{
+  "name": "filesystem",
+  "version": "1.0.0",
+  "description": "this is fs package",
+  "main": "app.js",
+  "scripts": {
+    "start":"node app.js",
+    "dev":"nodemon app.js"
+  },
+  "keywords": [
+    "fs",
+    "node"
+  ],
+  "author": "nareshit",
+  "license": "ISC"
+}
