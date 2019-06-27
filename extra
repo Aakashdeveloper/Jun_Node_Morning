@@ -84,3 +84,16 @@ add(1,2)
 const add = (a,b) => { return a+b }
 
 var | let | const 
+
+
+--------------------------env varibale
+Dev       QA         Prod
+abc       def        ghi
+
+
+
+/********************
+    Template engine
+*********************/
+
+EJS | Jade | Swig | PUG | Handlrbar
