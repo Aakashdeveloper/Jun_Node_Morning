@@ -97,3 +97,12 @@ abc       def        ghi
 *********************/
 
 EJS | Jade | Swig | PUG | Handlrbar
+
+
+
+function add(){
+    return a+b
+}
+
+
+add(1,2)
