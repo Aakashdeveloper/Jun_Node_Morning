@@ -106,3 +106,73 @@ function add(){
 
 
 add(1,2)
+
+/********************
+    Conact
+*********************/
+var a =10
+// Es5
+var b = "my age is "+a 
+//Es6
+var c = `my age is ${a}`
+
+/********************
+   For Trasnpile(es6=> es5)
+*********************/
+We use babel
+
+npm i @babel/core @babel/preset-env @babel/register babel-polyfill
+
+
+/********************
+  Why mongoDb
+*********************/
+Nosql Database
+
+--------------------------------------
+sno |    name  |   English   | Hindi  |
+1   |   John   |             |   80%  |
+2   |   Ankit  |    80%      |        |
+---------------------------------------
+
+[
+    {
+        name:"john",
+        "hindi":80
+    },
+    {
+        name:"Ankit",
+        "engilsh":80
+    }
+]
+
+for windown
+=> C:\data\db
+for mac
+=> sudo chown -R `id -un` /data/db
+
+default port 27017
+
+SQL               mongoDb
+Database        Database
+Table           Collections
+Row             Documents
+
+//See all Database
+> show dbs 
+//Check Collections
+> use <dbname>
+> show Collections
+//Get data from collection
+>db.<collection name>.find()
+//find with condition
+db.movies.find({rate:5}).pretty()
+db.movies.find({rate:5,name:"Coco"}).pretty()
+
+db.movies.find({},{_id:0,name:1}).pretty()
+db.movies.find({rate:5},{_id:0,name:1}).pretty()
+db.movies.find({},{_id:0,name:1,rate:1}).sort({rate:1}).pretty()
+db.movies.find({},{_id:0,name:1,rate:1}).sort({rate:-1}).skip(2).pretty()
+db.movies.find({},{_id:0,name:1,rate:1}).sort({rate:-1}).limit(2).pretty()
+
+db.movies.aggregate()
