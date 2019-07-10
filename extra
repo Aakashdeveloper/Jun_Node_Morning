@@ -176,3 +176,21 @@ db.movies.find({},{_id:0,name:1,rate:1}).sort({rate:-1}).skip(2).pretty()
 db.movies.find({},{_id:0,name:1,rate:1}).sort({rate:-1}).limit(2).pretty()
 
 db.movies.aggregate()
+
+db.students.insert({_id:"one",name:"stephen"})
+db.students.insertMany([
+    {name:"ankit",class:"ui"},
+    {name:"safi",class:"aws"},
+    {name:"manoj",class:"ML"},
+    {name:"nitima",class:"AI"},
+    {name:"john",class:"ui"},
+])
+
+ db.students.remove({class:"ui"})
+ db.students.find().pretty()
+ db.students.update({class:"ui"},{class:"Node"}))
+ db.students.update({class:"ui"},{$set:{class:"Node"}})
+ db.students.update({class:"node"},{$set:{class:"Angular"}},{multi:true})
+ db.students.update({class:"chabot"},{$set:{name:'Aakash',class:"React"}},{upsert:true})
+ db.students.count() 
+ db.students.distinct("class")
