@@ -194,3 +194,10 @@ db.students.insertMany([
  db.students.update({class:"chabot"},{$set:{name:'Aakash',class:"React"}},{upsert:true})
  db.students.count() 
  db.students.distinct("class")
+
+ /******
+ step1> npm i -g @aakashdeveloper/create-node-app
+
+ step2> generate
+
+  *****/
