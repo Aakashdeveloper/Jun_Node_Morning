@@ -76,6 +76,10 @@ app.delete('/deleteUser',(req,res) => {
     })
 })
 
+app.get('/new', (req,res) => {
+    res.render('index');
+})
+
 MongoClient.connect(mongourl,(err,client) => {
     if(err) throw err;
     db =client.db('classpractice');

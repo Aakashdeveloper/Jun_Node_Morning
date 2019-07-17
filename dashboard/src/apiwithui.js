@@ -30,7 +30,7 @@ app.post('/addUser',(req,res) => {
             if(err){
                 res.status(401)
             }else{
-               res.send(result)
+               res.redirect('/')
             }
         })
 });
@@ -69,6 +69,10 @@ app.delete('/deleteUser',(req,res) => {
         if(err) res.status(500).send(err)
         res.send({"messgae":"deleted"})
     })
+})
+
+app.get('/new',(req,res)=>{
+    res.render('admin')
 })
 
 MongoClient.connect(mongourl,(err,client) => {

@@ -84,12 +84,16 @@
                                         <input type="text" class="form-control" id="update_name" placeholder="Enter First name" name="name" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Email:</label>
-                                        <input type="text" class="form-control" id="update_email" placeholder="Enter Email" name="email">
+                                        <label for="city">City:</label>
+                                        <input type="text" class="form-control" id="update_city" placeholder="Enter City" name="city">
                                     </div>
                                     <div class="form-group">
                                         <label for="phone">Phone:</label>
                                         <input type="email" class="form-control" id="update_phone" placeholder="Enter phone" name="phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="class">Class:</label>
+                                        <input type="class" class="form-control" id="update_class" placeholder="Enter class" name="class">
                                     </div>
                                 </form>
                   
@@ -121,8 +125,9 @@
                         data: {"name":id},
                         success: function(data){
                               $("#update_name").attr("value", data[0].name);
-                              $("#update_email").attr("value", data[0].email);
+                              $("#update_city").attr("value", data[0].city);
                               $("#update_phone").attr("value", data[0].phone);
+                              $("#update_class").attr("value", data[0].class);
                               $('#Modal').modal({show: true});
                         },
                         error: function(){
@@ -159,7 +164,7 @@
                         var data = $('#update_user').serialize();
                         e.preventDefault();
                         $.ajax({
-                          url: '/update_user',
+                          url: '/updateuser',
                           type:'PUT',
                           data : data,
                           success: function(data){
