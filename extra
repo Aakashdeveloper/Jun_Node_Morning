@@ -201,3 +201,9 @@ db.students.insertMany([
  step2> generate
 
   *****/
+
+  /*******************
+  To Start Redis Server
+  ***********************/
+  redis-server
+  redis-cli
