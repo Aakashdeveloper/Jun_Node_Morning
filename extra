@@ -207,3 +207,9 @@ db.students.insertMany([
   ***********************/
   redis-server
   redis-cli
+
+
+/***********************
+    For JWT
+*************************/
+npm i jsonwebtoken cors bcryptjs express mongoose body-parser
