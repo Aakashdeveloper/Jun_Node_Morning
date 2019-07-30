@@ -213,3 +213,17 @@ db.students.insertMany([
     For JWT
 *************************/
 npm i jsonwebtoken cors bcryptjs express mongoose body-parser
+
+
+npm i -g json-server
+json-server --watch db.json --port 8900
+
+// Query
+{
+  product(id:5){
+    price,
+    name
+  }
+}
+
+//Mutation
